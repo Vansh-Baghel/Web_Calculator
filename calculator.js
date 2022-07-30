@@ -8,7 +8,6 @@ let svg = document.getElementById("Layer_1");
 for (let i of button) {
   i.addEventListener("click", (e) => {
     let btnText = e.target.innerText;
-    e.preventDefault();
     // console.log(btnText);
 
     // if (btnText == "=") {
@@ -47,7 +46,7 @@ for (let i of button) {
         btnText = "*";
         operateVal += btnText;
         screen.value = operateVal;
-        // console.log(operateVal);
+        console.log(screen.value);
         break;
 
       case "⌫":
@@ -86,3 +85,10 @@ for (let i of button) {
     // console.log(screen.value);
   });
 }
+
+// screen.addEventListener("click", (e) => localStorage.clear());
+
+// LETS GO!!
+/* function run() {
+  window.open("index.html", "_self");
+} */

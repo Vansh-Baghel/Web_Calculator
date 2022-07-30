@@ -269,24 +269,6 @@ a{
     /* background-color:rgba(93, 93, 243, 0.637); */
 }
 
-/* .insert--JS{
-    /* position: relative;
-    width: 100%;
-    height: 100%;  */
-    /* bottom: -10px; 
-    background-color: #050A30;
-
-} */
-
-.insert--JS p{
-    /* display: grid; */
-    /* grid-template-rows: 1; */
-    position: absolute;
-    /* bottom: -10%; */
-    background-color: #050A30; 
-    left: 50%;
-    text-align: center;
-}
 
 .currency:hover{
     color: orange;
@@ -338,7 +320,7 @@ a{
     transition: .4s;
     top: 98px;
     left:17px;
-    
+    height: 420px;
 }
 
 p.small__p{
