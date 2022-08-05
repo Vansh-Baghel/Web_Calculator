@@ -13,6 +13,9 @@ div{
     box-sizing: border-box;
 }
 
+body{
+    background-color:#030330 ;
+}
 
 .smaller--part{
     background-color:#08031d;
@@ -20,7 +23,6 @@ div{
     height: 637px;
     float: left;
     /* To align both the boxes , what a sharp brain :) */
-    border-bottom: 12.5px solid white;
 }
 
 .calc--text a{
@@ -165,8 +167,6 @@ p.small__p{
 
 .dropdown--heading{
     cursor: pointer;
-    font-size: 15px;
-    color: white;
     height: 255px;
     width: 231px;
     background-color: rgb(37, 30, 30);
@@ -189,7 +189,6 @@ p.small__p{
       0 0 40px #fff,
       -10px 0 80px #f0f,
       10px 0 80px #0ff;
-      
 }
 
 .dropdown--outmost:hover .dropdown--heading p{

@@ -3,12 +3,16 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #050A30;  
+
+}
+
 .container{
     box-sizing: border-box;
     border: 5px none;
     color: white;
     padding-left: 10px;
-    background-color: #050A30;
     height: 100vh;
 }
 
@@ -17,8 +21,10 @@
     width: 20%;
     height: 637px;
     float: left;
+    width: 20%;
+    height: 637px;
+    float: left;
     /* To align both the boxes , what a sharp brain :) */
-    border-bottom: 12.5px solid white;
 }
 
 .larger--part{
