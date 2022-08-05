@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="Calculator.css" />
-    <title>Calculator</title>
+    <title>Currency</title>
+    <link rel="stylesheet" href="Common.css" />
+    <link rel="stylesheet" href="Currency.css" />
   </head>
   <body>
     <div id="small" class="container smaller--part">
@@ -131,61 +132,52 @@
       </div>
     </div>
 
-    <!-- /////////////////////////////////////////////// -->
-    <div class="container larger--part">
-      <input type="text" id="quantity" name="quantity" />
-      <div class="calc__div">
-        <table>
-          <tr>
-            <td>
-              <button class="num--clr numbers--calc">AC</button>
-            </td>
-            <td>
-              <button class="numbers--calc">⌫</button>
-            </td>
-            <td>
-              <button class="numbers--calc">%</button>
-            </td>
-            <td>
-              <button class="numbers--calc">÷</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <button class="numbers--calc">7</button>
-            </td>
-            <td>
-              <button class="numbers--calc">8</button>
-            </td>
-            <td>
-              <button class="numbers--calc">9</button>
-            </td>
-            <td>
-              <button class="numbers--calc">×</button>
-            </td>
-          </tr>
-          <tr>
-            <td><button class="numbers--calc">4</button></td>
-            <td><button class="numbers--calc">5</button></td>
-            <td><button class="numbers--calc">6</button></td>
-            <td><button class="numbers--calc">-</button></td>
-          </tr>
-          <tr>
-            <td><button class="numbers--calc">1</button></td>
-            <td><button class="numbers--calc">2</button></td>
-            <td><button class="numbers--calc">3</button></td>
-            <td><button class="numbers--calc">+</button></td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <button class="number_zero numbers--calc">0</button>
-            </td>
-            <td><button class="numbers--calc">.</button></td>
-            <td><button class="num--equal numbers--calc">=</button></td>
-          </tr>
-        </table>
+    <!--   ///////////////////////////////////////////////////////////// -->
+    <div class="larger-part_container">
+      <h1 class="currency_heading">Currency Converter</h1>
+      <div class="amount">
+        <p class="enterAm">Enter Amount</p>
+        <input type="number" value="1" />
+      </div>
+      <div class="select-label-option">
+        <div class="from">
+          <p>From</p>
+          <div class="select-option">
+            <img
+              src="https://flagcdn.com/48x36/ad.png"
+              class="Flag"
+              alt="flag"
+            />
+            <select class="select1">
+              <!-- Options tag are inserted from JavaScript -->
+            </select>
+          </div>
+        </div>
+        <!-- <div class="swap"></div>
+          <img
+            src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-Swap-arrows-tanah-basah-glyph-tanah-basah.png"
+          /> -->
+        <div class="to">
+          <p>To</p>
+          <div class="select-option">
+            <img
+              src="https://flagcdn.com/48x36/ad.png"
+              class="Flag"
+              alt="flag"
+            />
+            <select class="select2">
+              <!-- Options tag are inserted from JavaScript -->
+            </select>
+          </div>
+        </div>
+        <output> </output>
+        <div class="button">
+          <button id="convert" onclick="countryExchangeRate()">Convert</button>
+        </div>
       </div>
     </div>
-    <script src="calculator.js"></script>
+    <script src="./country-list.js"></script>
+    <script src="./currency_to_country.js"></script>
+    <script src="./Currency.js"></script>
   </body>
 </html>

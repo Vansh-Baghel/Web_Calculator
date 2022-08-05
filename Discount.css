@@ -1,0 +1,126 @@
+body{
+    background-image: linear-gradient(160deg, #0093E9 50%, #80D0C7 100%);
+
+}
+
+
+.smaller--part{
+    border-bottom: 0px;
+    background-color: rgb(26, 26, 94);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wrapper{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-image: linear-gradient(lightblue, orange, purple, yellow, lightgreen);
+    background-color: #0093E9; */
+    background-color: #D9AFD9;
+    background-image: linear-gradient(160deg, #D9AFD9 0%, #97D9E1 100%);
+    
+    display: flex;
+    border-radius: 10px;
+    color: black    ;
+    width: 50%;
+    height: 85%;
+    position: absolute;
+    font-size: 20px ;
+    top: 7%;
+    left: 36%;
+    flex-direction: column;
+}
+
+.inputDivLabel{
+    font-size: 25px;
+    margin: 25px;
+}
+
+.valueInput{    
+    outline: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* This will disable the scroll of numbers in the input place which solves the problem of the negative number*/
+.valueInput::-webkit-inner-spin-button,
+.valueInput::-webkit-outer-spin-button,.discountInput::-webkit-inner-spin-button,
+.discountInput::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.valueInput:focus, .discountInput:focus{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #f38df3 100%);
+    outline: none;
+    font-weight: 500;
+    color: black;
+
+}
+
+.outputDiv{
+    display: grid;
+    margin-left: 25px;
+}
+
+.buttonDiv{
+    display: grid;
+}
+
+.Convert , .Reset{
+    width: 500px;
+    height: 40px;
+    position: relative;
+    left: 13%;
+    margin-top: 30px;
+    font-size: larger;
+    background-color: rgb(240, 128, 165);
+    border-radius: 7px;
+}
+
+.Convert:hover , .Reset:hover{
+    background-color:  rgb(247, 90, 142);
+    cursor: pointer;
+}
+
+/* Adding alert msg  */
+/* From here */
+.alertMsg{
+    position: absolute;
+    left:50%;
+    background-color:rgb(250, 182, 193);
+    color: rgb(236, 47, 47);
+    padding: 15px;
+    border-left: 10px solid rgb(247, 79, 79) ;
+    width: 26%;
+    opacity : 0;
+    animation: show 2s forwards ease;
+    transition: .5s;
+}
+
+.text{
+    font-size: 13px;
+}
+
+.fa-exclamation-circle{
+    font-size: larger;
+    position: relative;
+    left: 0px;
+}
+
+.fa-times{
+    position: absolute;
+    right: 0px;
+    top: 0%;
+    height: 53px;
+    background: rgb(240, 150, 150);
+    padding: 20px 18px;
+    cursor: pointer;
+}
+
+.fa-times:hover{
+    background: rgb(238, 110, 110);
+    
+}
+/* Till the previous line */

@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature</title>
+    <link rel="stylesheet" href="Common.css" />
     <link rel="stylesheet" href="Temperature.css" />
   </head>
   <body>
-    <div id="small" class="container smaller--part">
+    <div id="small" class="smaller--part">
       <div class="calc--text">
         <a href="./Calculator.html">Calculator</a>
       </div>
@@ -21,17 +22,17 @@
           <table>
             <tr>
               <td>
-                <a class="small--anchor" href="#"
+                <a class="small--anchor" href="./Calculator.html"
                   ><button class="number--btn smaller__el-TACD">123</button></a
                 >
                 <p class="below_small--texts">Number</p>
               </td>
               <td>
-                <a class="small--anchor" href="#">
+                <a class="small--anchor" href="./Temperature.html">
                   <button class="therm-btn smaller__el-TACD">
                     <img
                       class="therm"
-                      src="/thermometer-temperature-svgrepo-com.svg"
+                      src="./Resources/thermometer-temperature-svgrepo-com.svg"
                       alt="T"
                     />
                   </button>
@@ -41,13 +42,13 @@
             </tr>
             <tr>
               <td>
-                <a class="small--anchor" href="#">
+                <a class="small--anchor" href="./Currency.html">
                   <button class="currency smaller__el-TACD">$</button>
                 </a>
                 <p class="below_small--texts">Currency</p>
               </td>
               <td>
-                <a class="small--anchor" href="#">
+                <a class="small--anchor" href="./Discount.html">
                   <button class="discount--btn smaller__el-TACD">
                     <!--                 <div>
                     <span class="discount-svg"></span>
@@ -130,35 +131,48 @@
         </div>
       </div>
     </div>
-    <div class="larger--part">
-      <div class="select--options">
-        <label for="cars">Convert From :</label>
-        <select name="from" id="valueFrom" onchange="change()">
-          <option value="cel">Celcius (°C)</option>
-          <option value="fah">Fahrenheit (°F)</option>
-          <option value="kal">Kelvin (K)</option>
-          <option value="newt">Newton (°N)</option>
-          <option value="reau">Reaumur (°Re)</option>
-        </select>
-        <label for="cars">Convert To: </label>
 
-        <select name="to" id="valueTo" onchange="changeTo()">
-          <option value="cel">Celcius (°C)</option>
-          <option value="fah">Fahrenheit (°F)</option>
-          <option value="kal">Kelvin (K)</option>
-          <option value="newt">Newton (°N)</option>
-          <option value="reau">Reaumur (°Re)</option>
-        </select>
+    <!-- /////////////////////////////////////////////// -->
+    <div class="larger--container">
+      <div class="label_container">
+        <div class="select--contain">
+          <div class="select--options_1">
+            <label for="cars">Convert From :</label>
+            <select name="from" id="valueFrom" onchange="change()">
+              <option value="cel">Celcius (°C)</option>
+              <option value="fah">Fahrenheit (°F)</option>
+              <option value="kal">Kelvin (K)</option>
+              <option value="newt">Newton (°N)</option>
+              <option value="reau">Reaumur (°Re)</option>
+            </select>
+          </div>
+          <div class="select--options_2">
+            <label for="cars">Convert To: </label>
+
+            <select name="to" id="valueTo" onchange="changeTo()">
+              <option value="cel">Celcius (°C)</option>
+              <option value="fah">Fahrenheit (°F)</option>
+              <option value="kal">Kelvin (K)</option>
+              <option value="newt">Newton (°N)</option>
+              <option value="reau">Reaumur (°Re)</option>
+            </select>
+          </div>
+        </div>
+        <div class="value--btn">
+          <label for="cars">Value:</label>
+          <input type="number" id="enteredVal" />
+          <button id="convert">Convert</button>
+        </div>
+        <div class="select--options">
+          <label class="result" for="cars">Results:</label>
+          <div class="output">0</div>
+        </div>
       </div>
-      <div class="value--btn">
-        <label for="cars">Value:</label>
-        <input type="text" id="enteredVal" />
-        <button id="convert">Convert</button>
-      </div>
-      <div class="slect--options">
-        <label for="cars">Results:</label>
-        <output></output>
-      </div>
+    </div>
+    <div class="therm__edit">
+      <img class="img_therm" src="/Resources/therm.png" alt="ERROR" />
+      <!-- <p>hlo</p> -->
+      <div id="mercury__outer"><div id="mercury__inner"></div></div>
     </div>
     <script src="./Temperature.js"></script>
   </body>
