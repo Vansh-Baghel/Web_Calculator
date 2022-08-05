@@ -165,8 +165,8 @@ let submit = document
             return outputVal.innerHTML;
 
           case "fah":
-            const tempVar = 1.8 * (input - 273.15) + 32 + "°F";
-            outputVal.innerHTML = tempVar.toFixed(2);
+            const tempVar = 1.8 * (input - 273.15) + 32;
+            outputVal.innerHTML = tempVar.toFixed(2) + "°F";
             return outputVal.innerHTML;
 
           case "newt":
@@ -174,7 +174,7 @@ let submit = document
             return outputVal.innerHTML;
 
           case "kal":
-            outputVal.innerHTML = input + "K";
+            outputVal.innerHTML = (input * 1).toFixed(2) + "K";
             return outputVal.innerHTML;
 
           case "reau":
