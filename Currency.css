@@ -9,7 +9,7 @@ body{
 .smaller--part{
     border-bottom: 0px;
     background-color: rgb(26, 26, 94);
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
@@ -17,15 +17,23 @@ body{
 .larger-part_container{
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color: white;
-    display: flex;
     border-radius: 10px;
-    width: 35%;
+    width: 60%;
     height: 85%;
-    position: absolute;
-    top: 10%;
-    left: 43%;
-    align-items: center;
+    padding: 25px;
     flex-direction: column;
+}
+
+.out_btn{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.larger--part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 option{
@@ -41,7 +49,7 @@ option{
 }
 
 .select-label-option{
-    width: 85%;
+    width: 100%;
     font-size: 20px;
 }
 
@@ -92,10 +100,78 @@ output{
     left: 50%;
 }
 
+input{
+    width: 80%;
+}
+
 .amount{
+    font-size: 20px;
     width: 85%;
 }
 
 #convert:hover{
     background-color: rgb(82, 82, 223);
+}
+
+@media (min-width : 300px) and (max-width: 700px){
+    .smaller--part{
+        width: 100%;
+        height: 700px;
+        margin: none;
+        min-width: 350px;
+    }
+
+    .dropdown--outmost , .calc__div{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+            
+    }
+
+    .larger--part{
+        font-size: 25px;
+        padding: 50px 0;
+        width: 100%;
+    }
+
+    .currency_heading{
+        font-size: 30px;
+    }
+
+    .calc--text{
+        text-align: center;
+
+    }
+    .head{
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px){
+    .smaller--part{
+        width: 35%;
+    }
+
+    .dropdown--outmost , .calc__div{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+
+    .larger--part{
+        width: 65%;
+        position: relative;
+        left: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1380px){
+    .smaller--part{
+        width: 30%;
+    }
+    .larger--part{
+        width: 70%;
+    }
 }

@@ -134,33 +134,35 @@
 
     <!--   ///////////////////////////////////////////////////////////// -->
 
-    <div class="wrapper">
-      <div class="inputDivLabel">
-        <label> Enter the value</label>
-        <div class="inputDiv"><input type="number" class="valueInput" /></div>
-        <br />
-        <label> Discount in %</label>
-        <div class="inputDiv">
-          <input type="number" class="discountInput" />
+    <div class="larger--part">
+      <div class="larger-part_container">
+        <div class="inputDivLabel">
+          <label> Enter the value</label>
+          <div class="inputDiv"><input type="number" class="valueInput" /></div>
+          <br />
+          <label> Discount in %</label>
+          <div class="inputDiv">
+            <input type="number" class="discountInput" />
+          </div>
+        </div>
+        <div class="outputDiv">
+          <label> Discounted amount : </label>
+          <output class="discountOutput"> </output>
+          <br />
+          <label> Final amount : </label>
+
+          <output class="finalOutput"> </output>
+        </div>
+        <div class="buttonDiv">
+          <button class="Convert" onclick="calc()">Convert</button>
+          <button class="Reset">Reset</button>
         </div>
       </div>
-      <div class="outputDiv">
-        <label> Discounted amount : </label>
-        <output class="discountOutput"> </output>
-        <br />
-        <label> Final amount : </label>
-
-        <output class="finalOutput"> </output>
+      <div class="alertMsg">
+        <span class="fas fa-exclamation-circle"></span>
+        <span class="text">Warning:The value of discount is invalid</span>
+        <span class="fas fa-times"></span>
       </div>
-      <div class="buttonDiv">
-        <button class="Convert" onclick="calc()">Convert</button>
-        <button class="Reset">Reset</button>
-      </div>
-    </div>
-    <div class="alertMsg">
-      <span class="fas fa-exclamation-circle"></span>
-      <span class="text">Warning:The value of discount is invalid</span>
-      <span class="fas fa-times"></span>
     </div>
     <script src="Discount.js"></script>
   </body>

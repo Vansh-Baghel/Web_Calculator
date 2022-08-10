@@ -431,10 +431,11 @@ a.small--anchor{
     .container{
         height: 720px;
     }
+
     .calc--text{
         text-align: center;
-
     }
+    
     .head{
         font-size: 50px;
     }

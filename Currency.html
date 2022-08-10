@@ -11,7 +11,7 @@
   <body>
     <div id="small" class="container smaller--part">
       <div class="calc--text">
-        <a href="./index.html">Calculator</a>
+        <a class="head" href="./index.html">Calculator</a>
       </div>
       <div class="dropdown--outmost">
         <div class="dropdown--heading">
@@ -130,46 +130,52 @@
     </div>
 
     <!--   ///////////////////////////////////////////////////////////// -->
-    <div class="larger-part_container">
-      <h1 class="currency_heading">Currency Converter</h1>
-      <div class="amount">
-        <p class="enterAm">Enter Amount</p>
-        <input type="number" value="1" />
-      </div>
-      <div class="select-label-option">
-        <div class="from">
-          <p>From</p>
-          <div class="select-option">
-            <img
-              src="https://flagcdn.com/48x36/ad.png"
-              class="Flag"
-              alt="flag"
-            />
-            <select class="select1">
-              <!-- Options tag are inserted from JavaScript -->
-            </select>
-          </div>
+    <div class="larger--part">
+      <div class="larger-part_container">
+        <h1 class="currency_heading">Currency Converter</h1>
+        <div class="amount">
+          <p class="enterAm">Enter Amount</p>
+          <input type="number" value="1" />
         </div>
-        <!-- <div class="swap"></div>
+        <div class="select-label-option">
+          <div class="from">
+            <p>From</p>
+            <div class="select-option">
+              <img
+                src="https://flagcdn.com/48x36/ad.png"
+                class="Flag"
+                alt="flag"
+              />
+              <select class="select1">
+                <!-- Options tag are inserted from JavaScript -->
+              </select>
+            </div>
+          </div>
+          <!-- <div class="swap"></div>
           <img
             src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-Swap-arrows-tanah-basah-glyph-tanah-basah.png"
           /> -->
-        <div class="to">
-          <p>To</p>
-          <div class="select-option">
-            <img
-              src="https://flagcdn.com/48x36/ad.png"
-              class="Flag"
-              alt="flag"
-            />
-            <select class="select2">
-              <!-- Options tag are inserted from JavaScript -->
-            </select>
+          <div class="to">
+            <p>To</p>
+            <div class="select-option">
+              <img
+                src="https://flagcdn.com/48x36/ad.png"
+                class="Flag"
+                alt="flag"
+              />
+              <select class="select2">
+                <!-- Options tag are inserted from JavaScript -->
+              </select>
+            </div>
           </div>
-        </div>
-        <output> </output>
-        <div class="button">
-          <button id="convert" onclick="countryExchangeRate()">Convert</button>
+          <div class="out_btn">
+            <output> </output>
+            <div class="button">
+              <button id="convert" onclick="countryExchangeRate()">
+                Convert
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
