@@ -18,10 +18,9 @@ body{
 
 .smaller--part{
     background-color:#08031d;
-    width: 20%;
     height: 637px;
     float: left;
-    width: 20%;
+    width: 23% ;
     height: 637px;
     float: left;
     /* To align both the boxes , what a sharp brain :) */
@@ -103,6 +102,7 @@ button.numbers--calc:active{
     color: wheat;
     font-size: 28px;
     cursor: pointer;
+    border: 0px;
   }
   
   .numbers--calc::before {
@@ -326,7 +326,6 @@ a{
     transition: .4s;
     top: 98px;
     left:17px;
-    height: 420px;
 }
 
 p.small__p{
@@ -396,3 +395,83 @@ a.small--anchor{
     left: 11px;
 }
 
+@media (max-width: 700px){
+    .smaller--part{
+        width: 100% !important;
+        margin: none;
+        min-width: 350px;
+    }
+
+    .dropdown--outmost , .calc__div {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .larger--part{
+        width: 100%;
+    }
+
+    #quantity{
+        width: 80%;
+        position: relative;
+        left: 0;
+    }
+
+    .calc__div table{
+        position: relative;
+        left: 0;
+
+    }
+
+    .calc__div{
+        min-width: 368px;
+    }
+
+    .container{
+        height: 720px;
+    }
+    .calc--text{
+        text-align: center;
+
+    }
+    .head{
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px){
+    .smaller--part{
+        width: 35%;
+    }
+
+    .dropdown--outmost , .calc__div{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+    }
+
+    .larger--part{
+        width: 65%;
+        position: relative;
+        left: 0;
+        padding: 0;
+    }
+    .calc__div{
+        position: relative;
+        left: 0;
+    }
+    .calc__div table{
+       left: 10%;
+    }
+}
+
+@media (min-width: 1000px){
+    .smaller--part{
+        width: 30%;
+    }
+    .larger--part{
+        width: 70%;
+    }
+}
