@@ -152,7 +152,9 @@ a{
     position:relative;
     transition: .4s;
     top: 98px;
-    left:17px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 p.small__p{

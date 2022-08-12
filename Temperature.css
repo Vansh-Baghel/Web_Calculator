@@ -7,7 +7,7 @@
     align-items: center; */
     background-color: #030330 ;
     width: 80%; 
-    height: 100vh; 
+    height: 100%; 
     color: white;
     position: relative;
     /* float: bottom; */
@@ -188,7 +188,6 @@ button{
         display: grid;
         justify-content: center;
         align-items: center;
-            
     }
 
     .label_container{
@@ -208,27 +207,36 @@ button{
     .smaller--part{
         width: 35%;
     }
-
-    .dropdown--outmost , .calc__div{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        left: 0;
+    .label_container{
+        height: 250px;
     }
-
+    .therm__edit{
+        position: relative;
+    }
     .larger--container{
         width: 65%;
+        display: grid;
         position: relative;
         left: 0;
         padding: 0;
     }
 }
 
-@media (min-width: 1000px) and (max-width: 1380px){
+
+@media (min-width: 1000px) and (max-width: 1320px){
     .smaller--part{
-        width: 20%;
+        min-width: 25%;
     }
     .larger--container{
+        width: 70%;
+    }
+}
+
+@media (min-width: 1320px) {
+    .smaller--part{
+        min-width: 20%;
+    }
+    .larger--part{
         width: 70%;
     }
 }

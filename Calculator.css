@@ -20,7 +20,7 @@ body{
     background-color:#08031d;
     height: 637px;
     float: left;
-    width: 23% ;
+    width: 20% ;
     height: 637px;
     float: left;
     /* To align both the boxes , what a sharp brain :) */
@@ -325,7 +325,6 @@ a{
     position:relative;
     transition: .4s;
     top: 98px;
-    left:17px;
 }
 
 p.small__p{
@@ -470,7 +469,7 @@ a.small--anchor{
 
 @media (min-width: 1000px){
     .smaller--part{
-        width: 30%;
+        width: 20%;
     }
     .larger--part{
         width: 70%;
