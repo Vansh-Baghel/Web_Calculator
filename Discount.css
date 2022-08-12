@@ -1,3 +1,4 @@
+
 body{
     background-image: linear-gradient(160deg, #0093E9 50%, #80D0C7 100%);
 }
@@ -18,6 +19,7 @@ body{
 }
 
 .valueInput , .discountInput{
+    height: 5vh;
     width: 80%;    
     outline: none;
     color: black;
@@ -35,14 +37,17 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 
 
 .larger-part_container{
-    width: 80%;
+    width: 90%;
+    height: 100vh;
     font-size: 25px;
     padding-bottom: 25px;
+    display: grid;
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-image: linear-gradient(160deg, #D9AFD9 0%, #97D9E1 100%);
     background-color: #D9AFD9;
@@ -105,12 +110,15 @@ body{
 /* From here */
 .alertMsg{
     position: absolute;
-    left:50%;
+    left:20vw;
+    top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
     background-color:rgb(250, 182, 193);
     color: rgb(236, 47, 47);
     padding: 15px;
     border-left: 10px solid rgb(247, 79, 79) ;
-    width: 26%;
+    width: 37vw;
     opacity : 0;
     animation: show 2s forwards ease;
     transition: .5s;
@@ -130,7 +138,7 @@ body{
     position: absolute;
     right: 0px;
     top: 0%;
-    height: 53px;
+    height: 100%;
     background: rgb(240, 150, 150);
     padding: 20px 18px;
     cursor: pointer;
@@ -143,6 +151,10 @@ body{
 /* Till the previous line */
 
 @media (max-width: 700px){
+    .alertMsg{
+        width: 70vw;
+        left: 7vw;
+    }
     .smaller--part{
         width: 100% !important;
         height: 700px;
@@ -189,8 +201,14 @@ body{
 }
 
 @media (min-width: 700px) and (max-width: 1000px){
+    .alertMsg{
+        width: 40vw;
+        left: 7vw;
+    }
+
     .smaller--part{
-        width: 35% ;
+        width: 35vw;
+        height: 100vh;
     }
 
     .dropdown--outmost , .calc__div{
@@ -200,28 +218,35 @@ body{
         left: 0;
     }
 
+
     .larger--part{
-        width: 65%;
+        height: 100vh;
+        width: 60vw;
         position: relative;
         left: 0;
         padding: 0;
     }
 }
 
+
 @media (min-width: 1000px) and (max-width: 1320px){
+    
     .smaller--part{
         min-width: 25%;
-    }
+        height: 100vh;
+        }
     .larger--part{
-        width: 70%;
+        width: 75%;
     }
 }
 
 @media (min-width: 1320px) {
     .smaller--part{
         min-width: 20%;
+        height: 100vh;
+
     }
     .larger--part{
-        width: 70%;
+        width: 80%;
     }
 }

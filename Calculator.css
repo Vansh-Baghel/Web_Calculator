@@ -5,9 +5,13 @@
     box-sizing: border-box;
 }
 
+html{
+    width:100%;
+    height: 100%;
+}
+
 body{
     background-color: #050A30;  
-
 }
 
 .container{
@@ -442,9 +446,39 @@ a.small--anchor{
     }
 }
 
-@media (min-width: 700px) and (max-width: 1000px){
+
+@media (min-width: 700px) and (max-width: 1000px) and (min-height:900px){
+
+    .larger--part div{
+        height: 40%;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1320px) and (min-height:900px){
     .smaller--part{
-        width: 35%;
+        width: 25vw;
+        height: 100vh;
+    }
+    .larger--part{
+        width: 70vw;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 1320px) {
+    .smaller--part{
+        min-width: 20%;
+    }
+    .larger--part{
+        width: 70%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px){
+
+    .smaller--part{
+        width: 35vw;
+        height: 100vh;
     }
 
     .dropdown--outmost , .calc__div{
@@ -452,10 +486,14 @@ a.small--anchor{
         justify-content: center;
         align-items: center;
         left: 0;
-    }
 
+    }
+    .dropdown--outmost{
+        height: 50vh;
+        width: 98%;
+    }
     .larger--part{
-        width: 65%;
+        width: 60vw;
         position: relative;
         left: 0;
         padding: 0;
@@ -469,11 +507,26 @@ a.small--anchor{
     }
 }
 
-@media (min-width: 1000px){
+
+@media (min-width: 1000px) and (max-width: 1320px){
     .smaller--part{
-        width: 20%;
+        min-width: 25vw;
+        height: 100vh;
     }
     .larger--part{
-        width: 70%;
+        width: 70vw;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 1320px) {
+    .smaller--part{
+        width: 20vw;
+        height: 100vh;    
+    }
+
+    .larger--part{
+        width: 70vw;
+        height: 100vh;
     }
 }

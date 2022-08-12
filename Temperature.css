@@ -204,9 +204,16 @@ button{
     }
 }
 
+@media (min-width: 700px) and (max-width: 1000px) and (min-height: 900){
+    .therm__edit{
+        height: 50vh;
+    }
+}
+
 @media (min-width: 700px) and (max-width: 1000px){
     .smaller--part{
-        width: 35%;
+        width: 35vw;
+        height: 100vh;
     }
     .label_container{
         height: 250px;
@@ -215,10 +222,11 @@ button{
         position: relative;
     }
     #mercury__outer{
-        bottom: 20%;
+        bottom: 5vh;
     }
     .larger--container{
-        width: 65%;
+        height: 70vh;
+        width: 60vw;
         display: grid;
         position: relative;
         left: 0;
@@ -226,11 +234,11 @@ button{
     }
 }
 
-
 @media (min-width: 1000px) and (max-width: 1320px){
     .smaller--part{
         min-width: 25%;
-    }
+        height: 100vh;
+        }
     .larger--container{
         width: 75%;
     }
@@ -239,6 +247,8 @@ button{
 @media (min-width: 1320px) {
     .smaller--part{
         min-width: 20%;
+        height: 100vh;
+
     }
     .larger--part{
         width: 80%;
