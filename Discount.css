@@ -37,6 +37,8 @@ body{
     justify-content: center;
 }
 
+
+
 .larger-part_container{
     width: 80%;
     font-size: 25px;
@@ -180,7 +182,6 @@ body{
 
     .calc--text{
         text-align: center;
-
     }
     .head{
         font-size: 50px;

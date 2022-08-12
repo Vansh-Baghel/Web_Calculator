@@ -1,5 +1,7 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+
 *{
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 

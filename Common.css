@@ -8,8 +8,10 @@ div{
     height: 70px;
     background-color: rgb(248, 246, 246);
 } */
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+
 *{
-    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
@@ -28,7 +30,9 @@ body{
 .calc--text a{
     width: 256px;
 }
-
+.calc--text{
+    text-align: center;
+}
 a{
     /* width: 256px; */
     left: 40px;
