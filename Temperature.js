@@ -108,7 +108,8 @@ let submit = document
 
           // IDK why it needed Number , sheeeeesh finally its solved
           case "kal":
-            outputVal.innerHTML = Number(input) + Number(273.15) + "K";
+            outputVal.innerHTML =
+              (Number(input) + Number(273.15)).toFixed(2) + "K";
             // out = outputVal.innerHTML;
             // return out;
             return outputVal.innerHTML;

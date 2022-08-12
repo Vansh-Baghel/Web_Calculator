@@ -65,8 +65,10 @@ img .Flag{
 }
 
 select{
+    border: 1px solid black;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 25px;
+    height: 7vh;
     font-weight:lighter;
     width: 80%;
     margin-left: 15px;
@@ -99,6 +101,10 @@ output{
 
 input{
     width: 80%;
+    height: 7vh;
+    font-size: 25px;
+
+
 }
 
 .amount{
@@ -146,7 +152,8 @@ input{
 
 @media (min-width: 700px) and (max-width: 1000px){
     .smaller--part{
-        width: 35%;
+        width: 35vw;
+        height: 100vh;
     }
 
     .dropdown--outmost , .calc__div{
@@ -157,7 +164,8 @@ input{
     }
 
     .larger--part{
-        width: 65%;
+        height: 100%;
+        width: 60vw;
         position: relative;
         left: 0;
         padding: 0;
@@ -166,7 +174,8 @@ input{
 @media (min-width: 1000px) and (max-width: 1320px){
     .smaller--part{
         min-width: 25%;
-    }
+        height: 100vh;
+        }
     .larger--container{
         width: 75%;
     }
@@ -175,8 +184,11 @@ input{
 @media (min-width: 1320px) {
     .smaller--part{
         min-width: 20%;
+        height: 100vh;
+
     }
     .larger--part{
         width: 80%;
+        height: 100vh;
     }
 }
