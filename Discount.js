@@ -18,8 +18,8 @@ function calc() {
   } else {
     let evalFinalOutput = eval((inputPrice.value * discountPrice.value) / 100);
     let calcDiscountAmount = inputPrice.value - evalFinalOutput;
-    finalOutAmount.innerHTML = `₹ ${evalFinalOutput}`;
-    discountOutAmount.innerHTML = `₹ ${calcDiscountAmount}`;
+    finalOutAmount.innerHTML = `₹ ${calcDiscountAmount}`;
+    discountOutAmount.innerHTML = `₹ ${evalFinalOutput}`;
   }
 }
 
