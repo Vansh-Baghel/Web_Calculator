@@ -1,6 +1,8 @@
 "use strict";
 let button = document.querySelectorAll("button");
+// screen is the input field.
 let screen = document.getElementById("quantity");
+// operatorVal stores all the values in the input field , and let us perform different calculations through screen.value . 
 let operateVal = "";
 // let btnNotAllowed = document.querySelectorAll(".smaller__el-TACD");
 let svg = document.getElementById("Layer_1");
@@ -29,7 +31,6 @@ for (let i of button) {
       // screen.value = "";
       operateVal += btnText;
       screen.value = operateVal; 
-      console.log("hi");
     } */
 
     if (e.target == svg) {
@@ -43,18 +44,18 @@ for (let i of button) {
         break;
 
       case "×":
+//         Changing the btnText value to get the proper calculation . Then we are appending it inside the operateVal.
         btnText = "*";
         operateVal += btnText;
         screen.value = operateVal;
-        console.log(screen.value);
         break;
 
       case "⌫":
         // btnText = "";
         // operateVal += btnText;
+//         slice method doesnt include the last mentioned index number so it means that it'll go from 0 to value behind -1.
         operateVal = screen.value.toString().slice(0, -1);
         screen.value = operateVal;
-        // console.log(operateVal);
         break;
 
       case "=":
@@ -79,10 +80,10 @@ for (let i of button) {
         screen.value = operateVal;
 
       default:
+//         Here we are simply printing the numbers presssed.
         operateVal += btnText;
         screen.value = operateVal;
     }
-    // console.log(screen.value);
   });
 }
 
