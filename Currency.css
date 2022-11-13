@@ -103,8 +103,13 @@ input{
     width: 80%;
     height: 7vh;
     font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+}
 
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .amount{

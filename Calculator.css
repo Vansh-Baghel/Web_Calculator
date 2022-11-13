@@ -331,16 +331,20 @@ a{
     position:relative;
     transition: .4s;
     top: 98px;
+    left: 10px;
+    width: 90%;
 }
 
-p.small__p{
+div.small__p{
     font-size: 1em;
     color: white;
     /* text-align: center; */
-    position: absolute;
-    top: 35%;
-    left:35px;
+    text-align: center;
     opacity: .3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
 }
 
 .dropdown--heading{
@@ -348,7 +352,7 @@ p.small__p{
     font-size: 15px;
     color: white;
     height: 255px;
-    width: 231px;
+    width: 100%;
     background-color: rgb(37, 30, 30);
     /* text-align: center; */
     margin:0px;
@@ -356,6 +360,13 @@ p.small__p{
     position: relative;
     transform: translateY(49px);
     transition: .5s;
+}
+
+.dropdown--table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .dropdown--outmost:hover .dropdown--heading{
@@ -372,14 +383,13 @@ p.small__p{
       
 }
 
-.dropdown--outmost:hover .dropdown--heading p{
+.dropdown--outmost:hover .dropdown--heading .small__p{
 opacity: 1;
 }
 
 .dropdown--options{
     position: relative;
     transition: .5s;
-    left: auto;
     top: 10px;
     transform: translateY(-243px);
 }
@@ -507,12 +517,18 @@ a.small--anchor{
     }
 }
 
+@media (max-width: 1170px) {
+    .dropdown--options{
+        left: auto;
+    }
+}
 
 @media (min-width: 1000px) and (max-width: 1320px){
     .smaller--part{
         min-width: 25vw;
         height: 100vh;
     }
+    
     .larger--part{
         width: 70vw;
         height: 100vh;

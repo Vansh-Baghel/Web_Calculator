@@ -12,8 +12,7 @@ let closeAlert = document.querySelector(".fa-times");
 function calc() {
   if (discountPrice.value > 100) {
     // To avoid the calculation for values more than 100%
-    alert.style.opacity = 1;
-    e.preventDefault();
+    alert.style.display = "grid";
     // alert("Discount price exceeds the limit");
   } else {
     let evalFinalOutput = eval((inputPrice.value * discountPrice.value) / 100);
@@ -23,8 +22,8 @@ function calc() {
   }
 }
 
-closeAlert.addEventListener("click", (e) => {
-  alert.style.opacity = 0;
+closeAlert.addEventListener("click", () => {
+  alert.style.display = "none";
 });
 
 resetBtn.addEventListener("click", () => {

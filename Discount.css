@@ -1,4 +1,3 @@
-
 body{
     background-image: linear-gradient(160deg, #0093E9 50%, #80D0C7 100%);
 }
@@ -12,17 +11,20 @@ body{
     left: 0;
 }
 
-
 .inputDivLabel{
     font-size: 25px;
     margin: 25px;
+    width: 100%;
 }
 
 .valueInput , .discountInput{
     height: 5vh;
+    font-family: "Roboto";
     width: 80%;    
     outline: none;
     color: black;
+    font-size: 20px;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -110,18 +112,15 @@ body{
 /* From here */
 .alertMsg{
     position: absolute;
-    left:20vw;
-    top: 5vh;
-    display: grid;
+    top: 20px;
+    display: none;
     grid-template-columns: 1fr 10fr 1fr;
     background-color:rgb(250, 182, 193);
     color: rgb(236, 47, 47);
     padding: 15px;
     border-left: 10px solid rgb(247, 79, 79) ;
-    width: 37vw;
-    opacity : 0;
-    animation: show 2s forwards ease;
-    transition: .5s;
+    width: 500px;
+    animation: alertThing .8s forwards ease-in-out;
 }
 
 .text{
@@ -133,6 +132,7 @@ body{
     position: relative;
     left: 0px;
 }
+
 
 .fa-times{
     position: absolute;
@@ -150,11 +150,39 @@ body{
 }
 /* Till the previous line */
 
+@keyframes alertThing {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: .3;
+    }
+    60%{
+        opacity: .6;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 @media (max-width: 700px){
     .alertMsg{
-        width: 70vw;
-        left: 7vw;
+        width: 80%;
+        padding-left: 5px;
     }
+
+    .fa-times{
+        padding: 10px;
+    }
+
+    .text{
+        font-size: 13px;
+    }
+
+    .fa-exclamation-circle{
+        font-size: 20px;
+    }
+
     .smaller--part{
         width: 100% !important;
         height: 700px;
@@ -202,8 +230,7 @@ body{
 
 @media (min-width: 700px) and (max-width: 1000px){
     .alertMsg{
-        width: 40vw;
-        left: 7vw;
+        width: 80%;
     }
 
     .smaller--part{
